@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+<head> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<title>University website Design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>  
+<body>
+        <section class="sub-header">
+		<nav>
+		<a href="fullwebsite.html">
+		<img src="images/LOGO.PNG"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>		  
+		  <li><a href="fullwebsite.html">HOME</a></li>
+		  <li><a href="about.html">ABOUT</a></li>
+		  <li><a href="course.html">COURSE</a></li>
+		  <li><a href="blog.html">BLOG</a></li>
+		  <li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</div>
+		<i class="fa fa-bars" onclick= "showMenu()"></i>	
+	</nav>
+		<h1>CONTACT US</h1>
+		</section>
+		
+		<!-------CONTACT Us------->
+		
+		<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113032.64621395394!2d85.25609251320085!3d27.708942727046708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1622703928959!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+		
+		<section class="contact-us">
+		
+		<div class="row">
+		<div class="contact-col">
+		<div>
+		<i class="fa fa-home"></i>
+		<span>
+		<h5>XYZ Road, ABC Building</h5>
+		<p> Kalimati, Kathmandu, Nepal</p>
+		</span>
+		</div>
+		<div>
+		<i class="fa fa-phone"></i>
+		<span>
+		<h5>+977 98400212245</h5>
+		<p> Sunday to Friday, 10AM to 6PM</p>
+		</span>
+		</div>
+		<div>
+		<i class="fa fa-envelope"></i>
+		<span>
+		<h5>info@college.com</h5>
+		<p> Email us your query</p>
+		</span>
+		</div>
+		</div>
+		<div class="contact-col" 
+		 <form action="formhandler.php" method="post">
+		 <input type="text" name="name" placeholder="Enter your name" required>
+		 <input type="email" name="email" placeholder="Enter email address" required>
+		 <input type="text" name="subject" placeholder="Enter your subject" required>
+		 <textarea rows="8" name="message" placeholder="Message" required></textarea>
+		 <button type="submit" class="hero-btn red-btn">Send Message</button>
+		 </form>
+		   
+		  
+		</div>
+		</div>
+		</section>
+		
+		
+		<!-------Footer------->
+		<section class="footer">
+		<h4> About US</h4>
+		<p>Here We Offer Different kinds Of Courses. You can enroll the course that we offer is 
+		    degree in any subject.<br>Enroll for our various online courses.</p>
+		<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+		<i class="fa fa-tiktok"></i>
+		</div>
+		
+		<p> Made with <i class=" fa fa-heart "></i>  by Shova Pandey</p>
+		</section>
+		
+		<!------javascript------->
+		
+		<script>
+		var navLinks = document.getElementByID("navLinks");
+		
+		function showMenu(){
+		navLinks.style.right = "0";
+		}
+		function hideMenu(){
+		navLinks.style.right = "-200px"; 
+		}
+        </script>		
+ 
+</body>
+</html>
